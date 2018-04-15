@@ -4,10 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Hitting
+  - Shootable
   - spawnPoint
   - enemy
-  - bullet
   layers:
   - Default
   - TransparentFX
@@ -17,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Lighting
   - 
   - 
   - 
