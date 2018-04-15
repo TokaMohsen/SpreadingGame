@@ -23,10 +23,9 @@ public class BulletHandler : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButton (0)) {
-			SpawnBullet ();
-		
-
 			Vector3 fwd = transform.forward;
+			SpawnBullet (fwd);
+		
 			if (Physics.Raycast (transform.position, fwd, out shootHit, 100f)) {
 				if (shootHit.collider.tag == BulletTarget) {
 					Debug.Log ("" + shootHit.collider.name);
@@ -34,8 +33,7 @@ public class BulletHandler : MonoBehaviour {
 					//collision detection
 					ballscript = shootHit.collider.gameObject.GetComponent<Ball>();
 						ballscript.InstantiateFromThisKind(shootHit.collider.gameObject);
-					//ballscript = shootHit.collider.gameObject.GetComponent<Orbit>();
-					//ballscript.
+
 
 				}
 
@@ -45,13 +43,13 @@ public class BulletHandler : MonoBehaviour {
 		}
 	}
 
-	void SpawnBullet() {
+	void SpawnBullet(Vector3 vecDir) {
 		//Vector3 pos = RandomCircle(center, 5.0f);
 		//Quaternion rot = Quaternion.FromToRotation(Vector3.forward, transform.position);
 		//Instantiate(prefab, pos, rot);
 		//Instantiate(bullet, transform.position, rot);
-		GameObject instantiatedProjectile = Instantiate(bullet,transform.position,transform.rotation);
-		instantiatedProjectile.GetComponent<Bullet> ().setDir (this.transform.forward);
+		GameObject instantiatedProjectile = Instantiate(bullet,transform.position,transform.rotation) as GameObject;
+		instantiatedProjectile.GetComponent<Bullet> ().setDir (vecDir);
 		//instantiatedProjectile.gameObject.transform.Translate (this.transform.forward);
 		//instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0,5f));
 	
