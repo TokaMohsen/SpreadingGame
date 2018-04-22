@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}</ProjectGuid>
+    <ProjectGuid>{105A04CD-29A3-D0D7-AD9A-0D690B8E0023}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\amusedART\Mushroom_Monster\Script\MushroomMon_Ani_Test.cs" />
      <Compile Include="Assets\Ball.cs" />
      <Compile Include="Assets\Bullet.cs" />
      <Compile Include="Assets\BulletHandler.cs" />
@@ -58,10 +59,21 @@
      <Compile Include="Assets\fantasySpider\FSP_ContinuousRotation.cs" />
      <Compile Include="Assets\Flamingo\Scripts\CameraLookAt.cs" />
      <Compile Include="Assets\Flamingo\Scripts\Flamingo.cs" />
+     <Compile Include="Assets\HolyShift\Scripts\CheckForStandardAssets.cs" />
+     <Compile Include="Assets\KY_effects\Script\ConGUI.cs" />
+     <Compile Include="Assets\KY_effects\Script\Lighting.cs" />
      <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\CompletedScripts\RayCastShootComplete.cs" />
      <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\CompletedScripts\RayViewerComplete.cs" />
      <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\CompletedScripts\ShootableBox.cs" />
      <Compile Include="Assets\Orbit.cs" />
+     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
+     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
+     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
+     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
+     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
+     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\Shared Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\Shared Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
      <Compile Include="Assets\Shared Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -113,6 +125,7 @@
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\Fog.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
+     <None Include="Assets\HolyShift\readme.txt" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
@@ -122,6 +135,7 @@
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\Uber.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\Blit.shader" />
+     <None Include="Assets\HolyShift\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
@@ -130,6 +144,7 @@
      <None Include="Assets\Flamingo\Flamingo_readme.txt" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+     <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\Common.cginc" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
      <None Include="Assets\Flamingo\Shaders\AlphaTest-DiffuseDoublesided.shader" />
@@ -152,8 +167,10 @@
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+     <None Include="Assets\HolyShift\Shaders\FXWaterLowpoly.shader" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>/Users/toqa/Shooter/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>/Users/toqa/SpreadingGame/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Volumes/Macintosh HD/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
@@ -200,7 +217,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{CC31CF7D-B70A-E268-750A-61B4F6FE3C91}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{3C4E11A1-E3F3-E3C4-B79F-760C7F5888FF}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
