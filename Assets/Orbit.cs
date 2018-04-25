@@ -58,6 +58,16 @@ public class Orbit : MonoBehaviour {
 		this.transform.position= Vector3.MoveTowards(this.transform.position, Camera.main.transform.position,(rotSpeed*Time.deltaTime)/15);
 		this.transform.LookAt (Camera.main.transform.position);
 	}
+	void OnCollisionEnter(Collision collision)
+	{
+		if(collision.other.tag=="MainCamera"){
+			Debug.Log ("Idead");
+			Destroy (this.gameObject);
+
+		}
+	
+	
+	}
 }
 
 
