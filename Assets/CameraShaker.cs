@@ -16,7 +16,7 @@ public class CameraShaker : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//camera = Camera.main.transform;
-		camera = GetComponent<Camera>().transform;
+	//	camera = GetComponent<Camera>().transform;
 		startPosition = camera.localPosition;
 		initialDuration = duration;
 	}

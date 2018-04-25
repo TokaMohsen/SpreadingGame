@@ -1864,8 +1864,7 @@ MonoBehaviour:
   - {fileID: 1493337919870470, guid: 2b07c9f4fceb84e33af05ac4101a0a12, type: 2}
   - {fileID: 1448043606658670, guid: 5a8b2037fb24b40b2b33fa06ff774ba8, type: 2}
   - {fileID: 1237223541979920, guid: 320b5926298fb47c8b4a8136287ac482, type: 2}
-  - {fileID: 1949644337397398, guid: 40b83925d302f484f893bd3ca26ff1e8, type: 2}
-  - {fileID: 1949644337397398, guid: 40b83925d302f484f893bd3ca26ff1e8, type: 2}
+  - {fileID: 1949644337397398, guid: 671f419f47f644479a5415bbc614e430, type: 2}
   spawnPoints:
   - {fileID: 1846077370}
   - {fileID: 678704856}
@@ -2274,6 +2273,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.68
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1362778325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1362778318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129322617e29948409f81a156eecbf76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  power: 0.5
+  duration: 1
+  camera: {fileID: 1120024111}
+  slowDownAmount: 1
+  shouldShake: 0
 --- !u!1 &1390660682
 GameObject:
   m_ObjectHideFlags: 0

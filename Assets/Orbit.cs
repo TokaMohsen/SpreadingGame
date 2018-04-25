@@ -62,6 +62,8 @@ public class Orbit : MonoBehaviour {
 	{
 		if(collision.other.tag=="MainCamera"){
 			Debug.Log ("Idead");
+			//should shake 
+			collision.other.GetComponent<CameraShaker>().shouldShake=true;
 			Destroy (this.gameObject);
 
 		}
