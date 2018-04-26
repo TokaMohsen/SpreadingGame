@@ -16,4 +16,5 @@ public class CheckForStandardAssets : MonoBehaviour {
 	void Update () {
 		
 	}
+
 }
