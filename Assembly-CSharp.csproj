@@ -56,6 +56,14 @@
      <Compile Include="Assets\Bullet.cs" />
      <Compile Include="Assets\BulletHandler.cs" />
      <Compile Include="Assets\CameraShaker.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\AddPKFxFXComponent.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\BounceDie.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\CamZoom.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\FPSCam.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\PointClickSpawn.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\RomanCandle.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\RootyTootyPointNShooty.cs" />
+     <Compile Include="Assets\DiscoveryPack_Demo\_Sources\Scripts\TimedSuicide.cs" />
      <Compile Include="Assets\fantasySpider\FSP_ContinuousRotation.cs" />
      <Compile Include="Assets\Flamingo\Scripts\CameraLookAt.cs" />
      <Compile Include="Assets\Flamingo\Scripts\Flamingo.cs" />
@@ -65,6 +73,13 @@
      <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\CompletedScripts\RayCastShootComplete.cs" />
      <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\CompletedScripts\RayViewerComplete.cs" />
      <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\CompletedScripts\ShootableBox.cs" />
+     <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\DecalDestroyer.cs" />
+     <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\ExtinguishableFire.cs" />
+     <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\GunAim.cs" />
+     <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\ParticleCollision.cs" />
+     <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\ParticleExamples.cs" />
+     <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\ParticleMenu.cs" />
      <Compile Include="Assets\Orbit.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
@@ -123,8 +138,11 @@
      <None Include="Assets\Flamingo\Shaders\AlphaTest-DiffuseBack.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\Fog.shader" />
+     <None Include="Assets\DiscoveryPack_Demo\_README_FIRST.txt" />
+     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
+     <None Include="Assets\PopcornFX\Resources\PkFxDepthCopy.shader" />
      <None Include="Assets\HolyShift\readme.txt" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
@@ -134,6 +152,7 @@
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\Uber.shader" />
+     <None Include="Assets\PopcornFX\README.txt" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\Blit.shader" />
      <None Include="Assets\HolyShift\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
@@ -149,6 +168,7 @@
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
      <None Include="Assets\Flamingo\Shaders\AlphaTest-DiffuseDoublesided.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
+     <None Include="Assets\PopcornFX\Resources\PKFxDistQuickDirtyBlurEffect.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\TAA.shader" />
      <None Include="Assets\Butterfly (Animated)\Butterfly (Animated).txt" />
@@ -160,11 +180,14 @@
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+     <None Include="Assets\Tree1\ReadMe.txt" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
      <None Include="Assets\Horse\SoftAlpha.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+     <None Include="Assets\PopcornFX\Resources\PKFxDepthCopyToColor.shader" />
+     <None Include="Assets\PopcornFX\Resources\PKFxDistortionEffect.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
@@ -213,6 +236,15 @@
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>/Users/toqa/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="PKFx-Helper">
+ <HintPath>/Users/toqa/SpreadingGame/Assets/PopcornFX/Scripts/PKFx-Helper.dll</HintPath>
+ </Reference>
+ <Reference Include="PKFx-Runtime">
+ <HintPath>/Users/toqa/SpreadingGame/Assets/PopcornFX/Scripts/PKFx-Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="PKFxManager">
+ <HintPath>/Users/toqa/SpreadingGame/Assets/PopcornFX/Scripts/PKFxManager.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
