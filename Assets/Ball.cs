@@ -15,6 +15,7 @@ public class Ball : MonoBehaviour {
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+	//	rb.AddForce (transform.up*2000f);
     }
 
     // Update is called once per frame
@@ -52,11 +53,16 @@ public class Ball : MonoBehaviour {
 //
 	public void InstantiateFromThisKind(GameObject spawnPos)
 	{
-		for(int i =0 ;i< 3 ; i++)
+		for(int i =0 ;i< 8; i++)
 		{
-		Vector3 randomVec = (Random.insideUnitSphere * 2.0f) + spawnPos.transform.position;
+			Vector3 randomVec = (Random.insideUnitCircle * 2.0f) ;//+  new Vector2 (spawnPos.transform.position.x,spawnPos.transform.position.z);
 		//randomVec = GetRandomVector(spawnPoints[randomIntTwo].transform.position);
-			GeneratedObj=	Instantiate(this.gameObject, randomVec, this.transform.rotation);
+			GeneratedObj=	Instantiate(this.gameObject, this.transform.position, this.transform.rotation);
+			float  RandomScale = Random.Range (0.1f,this.transform.lossyScale.x/2);
+			//GeneratedObj.GetComponent<Orbit>().enabled=false;
+
+			GeneratedObj.gameObject.transform.localScale = new Vector3 (RandomScale,RandomScale,RandomScale);
+			//GeneratedObj.gameObject.GetComponent<Rigidbody> ().AddForce (transform.up*2000f);
 			GeneratedObj.GetComponent<Ball> ().lifeTime = childLifeTime;
 			GeneratedObj.GetComponent<Orbit> ().SetAtack ();
 		}

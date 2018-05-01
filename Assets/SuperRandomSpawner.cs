@@ -5,7 +5,9 @@ using UnityEngine;
 public class SuperRandomSpawner : MonoBehaviour {
 
 	public GameObject[] spawnees;
+	public GameObject[] waterSpawnees;
     public GameObject[] spawnPoints;
+	public GameObject[] waterSpawnPoints;
 
     public float radius = 2;
 	public bool stopSpawning = false;
@@ -17,6 +19,7 @@ public class SuperRandomSpawner : MonoBehaviour {
 
     void Start() {
         spawnPoints = GameObject.FindGameObjectsWithTag("spawnPoint");
+		//waterSpawnPoints = GameObject.FindGameObjectsWithTag("waterSpawnPoints");
 		InvokeRepeating("SpawnRandom", spawnTime, spawnDelay);
     }
     

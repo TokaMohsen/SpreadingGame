@@ -20,7 +20,7 @@ public class Orbit : MonoBehaviour {
 
 	void Start(){
 		
-		rotSpeed =Random.Range (2f,14f);
+		rotSpeed =Random.Range (1f,10f);
 		RandomDir=	Random.Range (0,2);
 		Debug.Log ("RandomDir"+RandomDir);
 		if (RandomDir == 0) {
