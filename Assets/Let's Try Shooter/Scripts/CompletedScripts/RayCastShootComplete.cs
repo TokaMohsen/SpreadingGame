@@ -10,7 +10,7 @@ public class RayCastShootComplete : MonoBehaviour {
 	public Transform gunEnd;
 	public  GameObject GunParticle;
 	// Holds a reference to the gun end object, marking the muzzle location of the gun
-
+	public ParticleSystem GunEffect;
 	private Camera fpsCam;												// Holds a reference to the first person camera
 	private WaitForSeconds shotDuration = new WaitForSeconds(0.07f);	// WaitForSeconds object used by our ShotEffect coroutine, determines time laser line will remain visible
 	private AudioSource gunAudio;										// Reference to the audio source which will play our shooting sound effect
@@ -22,6 +22,7 @@ public class RayCastShootComplete : MonoBehaviour {
 	public Ball ballscript;
 	void Start () 
 	{
+		GunEffect.Stop ();
 		// Get and store a reference to our LineRenderer component
 		laserLine = GetComponent<LineRenderer>();
 
@@ -52,7 +53,7 @@ public class RayCastShootComplete : MonoBehaviour {
 
 			// Set the start position for our visual effect for our laser to the position of gunEnd
 			laserLine.SetPosition (0, gunEnd.position);
-			 Instantiate(GunParticle, this.transform.position, this.transform.rotation);
+			// Instantiate(GunParticle, this.transform.position, this.transform.rotation);
 			//Instantiate(GunParticle , );
 			//GunParticle.
 			// Check if our raycast has hit anything
@@ -60,7 +61,7 @@ public class RayCastShootComplete : MonoBehaviour {
 			{
 				// Set the end position for our laser line 
 				laserLine.SetPosition (1, hit.point);
-
+				//Instantiate(GunParticle, this.transform.position, this.transform.rotation);
 				// Get a reference to a health script attached to the collider we hit
 				ShootableBox health = hit.collider.GetComponent<ShootableBox>();
 
@@ -76,6 +77,7 @@ public class RayCastShootComplete : MonoBehaviour {
 				if (hit.rigidbody != null)
 				{
 					// Add force to the rigidbody we hit, in the direction from which it was hit
+
 					hit.rigidbody.AddForce (-hit.normal * hitForce);
 					ballscript = hit.collider.gameObject.GetComponent<Ball>();
 					ballscript.InstantiateFromThisKind(hit.collider.gameObject);
@@ -83,6 +85,7 @@ public class RayCastShootComplete : MonoBehaviour {
 			}
 			else
 			{
+				//Destroy (GunParticle);
 				// If we did not hit anything, set the end of the line to a position directly in front of the camera at the distance of weaponRange
                 laserLine.SetPosition (1, rayOrigin + (fpsCam.transform.forward * weaponRange));
 			}
@@ -94,7 +97,8 @@ public class RayCastShootComplete : MonoBehaviour {
 	{
 		// Play the shooting sound effect
 		gunAudio.Play ();
-
+	//	Instantiate(GunParticle, this.transform.position, this.transform.rotation);
+		GunEffect.Play ();
 		// Turn on our line renderer
 		laserLine.enabled = true;
 
@@ -103,5 +107,6 @@ public class RayCastShootComplete : MonoBehaviour {
 
 		// Deactivate our line renderer after waiting
 		laserLine.enabled = false;
+		GunEffect.Stop ();
 	}
 }

@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\amusedART\Mushroom_Monster\Script\MushroomMon_Ani_Test.cs" />
      <Compile Include="Assets\Ball.cs" />
      <Compile Include="Assets\Bullet.cs" />
      <Compile Include="Assets\BulletHandler.cs" />
@@ -67,7 +66,6 @@
      <Compile Include="Assets\fantasySpider\FSP_ContinuousRotation.cs" />
      <Compile Include="Assets\Flamingo\Scripts\CameraLookAt.cs" />
      <Compile Include="Assets\Flamingo\Scripts\Flamingo.cs" />
-     <Compile Include="Assets\HolyShift\Scripts\CheckForStandardAssets.cs" />
      <Compile Include="Assets\KY_effects\Script\ConGUI.cs" />
      <Compile Include="Assets\KY_effects\Script\Lighting.cs" />
      <Compile Include="Assets\Let&apos;s Try Shooter\Scripts\CompletedScripts\RayCastShootComplete.cs" />
@@ -181,7 +179,6 @@
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
      <None Include="Assets\PopcornFX\Resources\PkFxDepthCopy.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\HolyShift\readme.txt" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
@@ -197,7 +194,6 @@
      <None Include="Assets\PopcornFX\README.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\Blit.shader" />
-     <None Include="Assets\HolyShift\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
@@ -237,7 +233,6 @@
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\Tree1\ReadMe.txt" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
-     <None Include="Assets\Horse\SoftAlpha.shader" />
      <None Include="Assets\GreenStash\Shader\DoubleSidedButterfly.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
@@ -247,7 +242,6 @@
      <None Include="Assets\Shared Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
      <None Include="Assets\Shared Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
-     <None Include="Assets\HolyShift\Shaders\FXWaterLowpoly.shader" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/Users/toqa/SpreadingGame/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

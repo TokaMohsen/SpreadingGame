@@ -58,7 +58,7 @@ public class Ball : MonoBehaviour {
 			Vector3 randomVec = (Random.insideUnitCircle * 2.0f) ;//+  new Vector2 (spawnPos.transform.position.x,spawnPos.transform.position.z);
 		//randomVec = GetRandomVector(spawnPoints[randomIntTwo].transform.position);
 			GeneratedObj=	Instantiate(this.gameObject, this.transform.position, this.transform.rotation);
-			float  RandomScale = Random.Range (0.1f,this.transform.lossyScale.x/2);
+			float  RandomScale = Random.Range (0.9f,2.0f);
 			//GeneratedObj.GetComponent<Orbit>().enabled=false;
 
 			GeneratedObj.gameObject.transform.localScale = new Vector3 (RandomScale,RandomScale,RandomScale);
